@@ -4,7 +4,7 @@ pipeline {
     MAJOR_VERSION=1
   }
   stages {
-    stage('Executing some shell commands...') {
+    stage('Executing some shell commands[Branch1]...') {
       agent any
         steps {
           sh 'ls -lhtra'
