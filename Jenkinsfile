@@ -9,6 +9,7 @@ pipeline {
         steps {
           sh 'ls -lhtra'
           sh 'pwd'
+          sh 'git remote -v'
         }
     }
   }
