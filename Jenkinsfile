@@ -8,6 +8,7 @@ pipeline {
       agent any
         steps {
           sh 'ls -lhtra'
+          sh 'pwd'
         }
     }
   }
