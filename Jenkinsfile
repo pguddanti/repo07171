@@ -4,7 +4,7 @@ pipeline {
     MAJOR_VERSION=1
   }
   stages {
-    stage('listing directory contents') {
+    stage('Executing some shell commands...') {
       agent any
         steps {
           sh 'ls -lhtra'
