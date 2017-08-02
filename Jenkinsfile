@@ -1,5 +1,7 @@
 pipeline {
-  agent none
+  agent {
+    none
+  }
   environment {
     MAJOR_VERSION=1
   }
@@ -10,6 +12,7 @@ pipeline {
           sh 'ls -lhtra'
           sh 'pwd'
           sh 'git remote -v'
+          sh 'git branch -a'
         }
     }
   }
