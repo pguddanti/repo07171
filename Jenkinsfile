@@ -12,7 +12,7 @@ pipeline {
           sh 'git remote -v'
           sh 'git branch -a'
           sh 'printenv'
-          sh '${env.BUILD_URL}'
+          sh 'echo ${env.BUILD_URL}'
         }
     }
   }
