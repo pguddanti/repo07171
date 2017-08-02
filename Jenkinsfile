@@ -12,7 +12,7 @@ pipeline {
           sh 'git remote -v'
           sh 'git branch -a'
           sh 'printenv'
-          sh 'echo "BUILD_URL variable data as found in the \'env\' variable is : ${BUILD_URL}"'
+          sh 'echo "BUILD_URL variable data as found in the 'env' variable is : ${BUILD_URL}"'
         }
     }
   }
