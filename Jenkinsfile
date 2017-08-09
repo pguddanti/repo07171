@@ -9,7 +9,7 @@ pipeline {
     MAJOR_VERSION=1
   }
   stages {
-    stage('Executing some shell commands & printing some environment variables...') {
+    stage('Learning Jenkins pipeline...') {
       agent any
         steps {
           sh 'ls -lhtra'
