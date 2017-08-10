@@ -21,9 +21,9 @@ pipeline {
           //sh 'printenv'
           //sh 'echo "BUILD_URL variable data as found in the \'env\' variable is : ${BUILD_URL}"'
           //mail to: 'pguddanti@nisum.com', subject: "[Testing]: Sending mail through Jenkinsfile build", body: "Testing..." //Mailing
-          echo "Choice Selected: ${params1.pChoice}"
-          echo "Choice Selected: ${params2.pChoice}"
-          echo "Choice Selected: ${params3.pChoice}"
+          echo "Choice Selected: ${params.pChoice1}"
+          echo "Choice Selected: ${params.pChoice2}"
+          echo "Choice Selected: ${params.pChoice3}"
           echo "Boolean Selected: ${params.bParam}"
           echo "Name Entered: ${params.fullName}"
         }
