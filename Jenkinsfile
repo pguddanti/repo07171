@@ -3,7 +3,7 @@ pipeline {
   parameters {
     choice(name: 'pChoice', choices: 'One\nTwo\nThree', description: 'Description for the param named Choice')
     booleanParam(name: 'bParam', defaultValue: true, description: 'Checkbox Parameter')
-    string(name: 'fullName', value: 'G Prasanth Kumar', description: 'You can change the above full name')
+    string(name: 'fullName', defaultValue: 'G Prasanth Kumar', description: 'You can change the above full name')
   }
   environment {
     MAJOR_VERSION=1
